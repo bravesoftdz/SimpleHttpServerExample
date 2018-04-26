@@ -11,7 +11,12 @@ public class EventMessage {
 	public void getMessageServer(String msg) {
 
 		String message = msg;
-		System.err.println(message);
+
+		if (message.isEmpty()) {
+			System.err.println("NO A MESSAGE!!!");
+		} else {
+			System.err.println(message);
+		}
 
 	}
 
